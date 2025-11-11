@@ -1,0 +1,454 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* ===== TOP NAVIGATION ===== */
+.navigation {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navigation li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #5f6368;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.navigation a:hover {
+    color: #1a73e8;
+    background: rgba(26, 115, 232, 0.1);
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.block1 {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.h1 h1 {
+    font-size: 3rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.p p {
+    font-size: 1.4rem;
+    color: #5f6368;
+    margin-bottom: 2rem;
+}
+
+/* ===== FORM STYLES ===== */
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.meet {
+    background: #1a73e8;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+}
+
+.meet:hover {
+    background: #1669d8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 115, 232, 0.4);
+}
+
+.meat {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.meat input[type="text"] {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid #dadce0;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.meat input[type="text"]:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.meat input[type="submit"] {
+    background: #34a853;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.meat input[type="submit"]:hover {
+    background: #2e9849;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(52, 168, 83, 0.3);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #dadce0, transparent);
+    margin: 3rem 0;
+}
+
+/* ===== BLOCK 2 STYLES ===== */
+.block2 {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    backdrop-filter: blur(10px);
+}
+
+.block2 .image {
+    flex: 1;
+    text-align: center;
+}
+
+.block2 .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.block2 .h2 {
+    flex: 1;
+}
+
+.block2 .h2 h1 {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.block2 .h2 p2 {
+    font-size: 1.2rem;
+    color: #5f6368;
+    line-height: 1.6;
+}
+
+.a {
+    margin-top: 1.5rem;
+}
+
+.a a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.a a:hover {
+    color: #1669d8;
+    text-decoration: underline;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .navigation {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .navigation li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .block1 {
+        margin: 1rem;
+        padding: 2rem 1.5rem;
+    }
+    
+    .h1 h1 {
+        font-size: 2.2rem;
+    }
+    
+    .p p {
+        font-size: 1.2rem;
+    }
+    
+    .block2 {
+        flex-direction: column;
+        text-align: center;
+        margin: 1rem;
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
+    
+    .block2 .h2 h1 {
+        font-size: 2rem;
+    }
+    
+    .meat {
+        flex-direction: column;
+    }
+    
+    .meat input[type="text"],
+    .meat input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+    .body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    .navigation {
+        padding: 0.8rem;
+    }
+    
+    .navigation a {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .block1 {
+        margin: 0.5rem;
+        padding: 1.5rem 1rem;
+        border-radius: 15px;
+    }
+    
+    .h1 h1 {
+        font-size: 1.8rem;
+    }
+    
+    .p p {
+        font-size: 1rem;
+    }
+    
+    .meet {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .meat input[type="text"],
+    .meat input[type="submit"] {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .block2 {
+        margin: 0.5rem;
+        padding: 1.5rem 1rem;
+        border-radius: 15px;
+    }
+    
+    .block2 .h2 h1 {
+        font-size: 1.6rem;
+    }
+    
+    .block2 .h2 p2 {
+        font-size: 1rem;
+    }
+}
+
+/* Large Desktops (1200px and above) */
+@media screen and (min-width: 1200px) {
+    .block1,
+    .block2 {
+        max-width: 1400px;
+    }
+    
+    .h1 h1 {
+        font-size: 3.5rem;
+    }
+    
+    .p p {
+        font-size: 1.6rem;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .body {
+        background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    }
+    
+    .navigation {
+        background: rgba(45, 55, 72, 0.95);
+    }
+    
+    .navigation a {
+        color: #e2e8f0;
+    }
+    
+    .navigation a:hover {
+        color: #90cdf4;
+        background: rgba(144, 205, 244, 0.1);
+    }
+    
+    .block1,
+    .block2 {
+        background: rgba(45, 55, 72, 0.95);
+        color: #e2e8f0;
+    }
+    
+    .h1 h1,
+    .block2 .h2 h1 {
+        color: #90cdf4;
+    }
+    
+    .p p,
+    .block2 .h2 p2 {
+        color: #cbd5e0;
+    }
+    
+    .meat input[type="text"] {
+        background: #4a5568;
+        border-color: #718096;
+        color: #e2e8f0;
+    }
+    
+    .meat input[type="text"]:focus {
+        border-color: #90cdf4;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .body {
+        background: #000;
+    }
+    
+    .navigation {
+        background: #fff;
+        border: 2px solid #000;
+    }
+    
+    .navigation a {
+        color: #000;
+        border: 1px solid #000;
+    }
+    
+    .block1,
+    .block2 {
+        background: #fff;
+        border: 3px solid #000;
+    }
+    
+    .h1 h1,
+    .block2 .h2 h1 {
+        color: #000;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navigation,
+    .meet,
+    .meat,
+    .a {
+        display: none;
+    }
+    
+    .body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .block1,
+    .block2 {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border: 1px solid #000 !important;
+    }
+}
+
+/* Animation for better UX */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.block1,
+.block2 {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+input:focus,
+button:focus {
+    outline: 3px solid #1a73e8;
+    outline-offset: 2px;
+}
+
+/* Loading state for buttons */
+.meet:active,
+.meat input[type="submit"]:active {
+    transform: translateY(0);
+    transition: transform 0.1s;
+}
